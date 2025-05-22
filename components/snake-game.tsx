@@ -271,6 +271,7 @@ export default function SnakeGame() {
           )}
 
           <div className="mt-4 grid grid-cols-3 gap-2 md:hidden">
+            <div></div>
             <Button
               onClick={() => {
                 if (direction !== "down" && gameStarted && !gameOver) {
@@ -281,7 +282,6 @@ export default function SnakeGame() {
             >
               ↑
             </Button>
-            <div></div>
             <div></div>
             <Button
               onClick={() => {
