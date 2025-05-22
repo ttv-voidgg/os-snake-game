@@ -253,6 +253,15 @@ export default function WindowsDesktop() {
     setStartMenuOpen((prev) => !prev)
   }
 
+  const handleClick = () => {
+    window.parent.postMessage(
+        { type: 'IFRAME_CLICKED', value: 'button1' },
+        '*'
+     );
+  };
+
+
+
   return (
       <div
           className="w-screen h-screen relative overflow-hidden bg-cover bg-center"
@@ -456,7 +465,7 @@ export default function WindowsDesktop() {
                     </div>
                     <div className="flex items-center text-xs hover:text-blue-800 cursor-pointer">
                       <div className="text-lg mr-1">⭕</div>
-                      <div>Shut Down</div>
+                      <div onClick={handleClick}>Shut Down</div>
                     </div>
                   </div>
                 </div>
