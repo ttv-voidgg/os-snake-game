@@ -292,11 +292,11 @@ export default function WindowsDesktop() {
                     <div
                         key={`window-${window.id}`}
                         className={`absolute bg-gray-100 rounded-t shadow-xl overflow-hidden flex flex-col ${
-                            window.isMaximized ? "w-full h-[calc(100%-40px)] top-0 left-0" : "w-[500px] h-[400px]"
+                            window.isMaximized ? "w-full h-[calc(100%-40px)] " : "top-0 left-0 w-[300px] h-[400px]"
                         }`}
                         style={{
-                          left: window.isMaximized ? 0 : window.position.x,
-                          top: window.isMaximized ? 0 : window.position.y,
+                          left: 0,
+                          top: 0,
                           zIndex: window.zIndex,
                         }}
                         onClick={() => bringToFront(window.id)}
