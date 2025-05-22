@@ -8,7 +8,6 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Windows XP Snake Game",
   description: "A nostalgic Windows XP interface with Snake game",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
