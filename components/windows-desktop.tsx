@@ -463,9 +463,9 @@ export default function WindowsDesktop() {
                       <div className="text-lg mr-1">🔒</div>
                       <div>Lock</div>
                     </div>
-                    <div className="flex items-center text-xs hover:text-blue-800 cursor-pointer">
+                    <div onClick={handleClick} className="flex items-center text-xs hover:text-blue-800 cursor-pointer">
                       <div className="text-lg mr-1">⭕</div>
-                      <div onClick={handleClick}>Shut Down</div>
+                      <div>Shut Down</div>
                     </div>
                   </div>
                 </div>
